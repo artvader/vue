@@ -1,0 +1,28 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "my vuejs playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css && reload --port 8889 --dir d:/xampp/htdocs/vue --browser \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artvader/vue.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "art jazmines",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artvader/vue/issues"
+  },
+  "homepage": "https://github.com/artvader/vue#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1"
+  }
+}
