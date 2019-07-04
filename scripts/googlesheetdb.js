@@ -9,7 +9,7 @@
  //Use XMLHttpRequest (XHR) objects to interact with servers. 
  //You can retrieve data from a URL without having to do a full page refresh.
 
- You can retrieve data from a URL without having to do a full page refresh.
+ //You can retrieve data from a URL without having to do a full page refresh.
  xmlhttp.open('GET', url, true);
  xmlhttp.onreadystatechange = function () {
      if (xmlhttp.readyState == 4) {
