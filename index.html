@@ -1,23 +1,23 @@
 <html>
 
 <head>
-  <title>Vue.JS Demo</title>
+  <title>Vue.JS</title>
   <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
   <h2>Basic Vue.JS Demo</h2>
   <div id="app">
-    <ol>
+    <ol v-cloak>
       <li v-for="todo in todos">
         {{ todo.text }}
       </li>
     </ol>
   </div>
-  <h2>Google Sheet as DB Demo</h2>
+  <h2>Google Sheet as Data Source</h2>
   <div id="googleSheetDB">
     <ul v-cloak>
       <li v-for="googleSheetItem in googleSheetItems">
-        <strong>{{googleSheetItem.gsx$title.$t}}</strong> - <em>{{googleSheetItem.gsx$content.$t}}</em> 
+        <strong>{{googleSheetItem.gsx$title.$t}}</strong> - <em>{{googleSheetItem.gsx$content.$t}}</em> <div v-html="googleSheetItem.gsx$article.$t"></div>
       </li>
     </ul>
   </div>

@@ -23,7 +23,6 @@
          if (xmlhttp.status == 200) {
              var data = JSON.parse(xmlhttp.responseText);
              var entry = data.feed.entry;
-
              //Vue.js script to process data
              var googleSheetApp = new Vue({
                  el: '#googleSheetDB',

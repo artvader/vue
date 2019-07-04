@@ -1,2 +1,6 @@
-[v-cloak] {
+@charset "UTF-8";
+[v-cloak] > * {
   display: none; }
+
+[v-cloak]::before {
+  content: "loading…"; }
