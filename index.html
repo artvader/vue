@@ -1,16 +1,30 @@
 <html>
+
 <head>
-    <link rel="stylesheet" href="public/css/main.css">
+  <title>Vue.JS Demo</title>
+  <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
-        <div id="app">
-                <ol>
-                  <li v-for="todo in todos">
-                    {{ todo.text }}
-                  </li>
-                </ol>
-              </div>
-    <script src="libs/vue.js"></script>
-    <script src="scripts/main.js"></script>
+  <h2>Basic Vue.JS Demo</h2>
+  <div id="app">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+  <h2>Google Sheet as DB Demo</h2>
+  <div id="googleSheetDB">
+    <ul v-cloak>
+      <li v-for="googleSheetItem in googleSheetItems">
+        <strong>{{googleSheetItem.gsx$title.$t}}</strong> - <em>{{googleSheetItem.gsx$content.$t}}</em> 
+      </li>
+    </ul>
+  </div>
+
+  <script src="libs/vue.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/googlesheetdb.js"></script>
 </body>
+
 </html>

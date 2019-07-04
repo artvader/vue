@@ -4,7 +4,11 @@ var app = new Vue({
       todos: [
         { text: 'Learn JavaScript' },
         { text: 'Learn Vue' },
-        { text: 'Build something awesome' }
+        { text: 'Build something awesome' },
+        { text: '1' },
+        { text: '2' },
+        { text: '3' }
       ]
     }
-  })
+  });
+

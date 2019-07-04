@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css && reload --port 8889 --dir d:/xampp/htdocs/vue --browser \" "
+    "watch-css": "nodemon -e scss -x \"npm run build-css && reload --port 6969 --dir d:/xampp/htdocs/vue --browser \" "
   },
   "repository": {
     "type": "git",
