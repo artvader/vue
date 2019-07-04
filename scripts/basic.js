@@ -11,4 +11,3 @@ var app = new Vue({
       ]
     }
   });
-
