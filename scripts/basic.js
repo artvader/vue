@@ -5,9 +5,9 @@ var app = new Vue({
         { text: 'Learn JavaScript' },
         { text: 'Learn Vue' },
         { text: 'Build something awesome' },
-        { text: '1' },
-        { text: '2' },
-        { text: '3' }
+        { text: 'Create a Demo Page' },
+        { text: 'Debug Demo Page' },
+        { text: 'Push to GIT' }
       ]
     }
   });

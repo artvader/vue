@@ -20,3 +20,10 @@ h1 {
 .content {
     padding:0 #{(16/$base-font-size)*1rem};
 }
+
+.supplementary-info {
+    padding:(8/$base-font-size)*1rem;
+    background:lighten(black,90%);
+    border-radius:(4/$base-font-size)*1rem;
+    max-width:(990/$base-font-size)*1rem;
+}

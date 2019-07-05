@@ -17,3 +17,9 @@ h1 {
 
 .content {
   padding: 0 1rem; }
+
+.supplementary-info {
+  padding: 0.5rem;
+  background: #e6e6e6;
+  border-radius: 0.25rem;
+  max-width: 61.875rem; }

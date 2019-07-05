@@ -291,7 +291,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var app = new Vue({\n  el: '#app',\n  data: {\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }, { text: '1' }, { text: '2' }, { text: '3' }]\n  }\n});\n\n//# sourceURL=webpack:///./scripts/basic.js?");
+eval("var app = new Vue({\n  el: '#app',\n  data: {\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }, { text: 'Create a Demo Page' }, { text: 'Debug Demo Page' }, { text: 'Push to GIT' }]\n  }\n});\n\n//# sourceURL=webpack:///./scripts/basic.js?");
 
 /***/ }),
 
