@@ -15,17 +15,26 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     /*
      * Some styles so that our first component
      * looks somewhat special
     */
     .main-content {
         font-family: sans-serif;
-        background-color: red;
+        background-color: lighten(red,30%);
         padding: 10px;
         border-radius: 5px;
         max-width: 500px;
+        h1 {
+            font-size:16px;
+            margin:0;
+        }
+        h3 {
+            font-size:16px;
+            font-weight:normal;
+            margin:0;
+        }
     }
 </style>
 

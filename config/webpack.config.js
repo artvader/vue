@@ -21,7 +21,11 @@ module.exports = {
         // Folder where the output of webpack's result go.
         path: resolve('public/bundle'),
     },
-    resolve: { alias: { vue: 'vue/dist/vue.esm.js' } },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.esm.js'
+        }
+    },
     module: {
         rules: [{
                 test: /\.vue$/,
@@ -37,11 +41,22 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     'vue-style-loader',
-                    'css-loader'
+                    'css-loader',
+
+                ]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    //chaining the loaders is the key!
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
                 ]
             }
         ]
     },
+
     plugins: [
         // make sure to include the plugin!
         new VueLoaderPlugin()
