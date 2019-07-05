@@ -23,3 +23,9 @@ h1 {
   background: #e6e6e6;
   border-radius: 0.25rem;
   max-width: 61.875rem; }
+
+.text-sm {
+  font-size: 0.75rem; }
+
+#search-filter li {
+  padding: 0.625rem 1rem; }

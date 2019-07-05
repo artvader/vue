@@ -18,6 +18,7 @@
 <style lang="scss" scoped>
 
     @import "../../scss/_variables.scss";
+    @import "../../scss/templatevue";
     /*
      * Some styles so that our first component
      * looks somewhat special

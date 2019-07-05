@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"/*\\n * Some styles so that our first component\\n * looks somewhat special\\n*/\\n.main-content[data-v-79af8d89] {\\n  font-family: sans-serif;\\n  background-color: #ff9999;\\n  padding: 0.625rem;\\n  border-radius: 0.3125rem;\\n  max-width: 64rem;\\n}\\n.main-content h2[data-v-79af8d89] {\\n    font-size: 1rem;\\n    margin: 0;\\n}\\n.main-content h3[data-v-79af8d89] {\\n    font-size: 1rem;\\n    font-weight: normal;\\n    margin: 0;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"div[data-v-79af8d89] {\\n  color: #4d4d4d;\\n}\\ndiv[data-v-79af8d89]:after {\\n    content: \\\"This is actually a psuedo element that is scoped specifically to this module's DIV\\\";\\n    font-size: 0.5rem;\\n}\\n\\n/*\\n * Some styles so that our first component\\n * looks somewhat special\\n*/\\n.main-content[data-v-79af8d89] {\\n  font-family: sans-serif;\\n  background-color: #ff9999;\\n  padding: 0.625rem;\\n  border-radius: 0.3125rem;\\n  max-width: 64rem;\\n}\\n.main-content h2[data-v-79af8d89] {\\n    font-size: 1rem;\\n    margin: 0;\\n}\\n.main-content h3[data-v-79af8d89] {\\n    font-size: 1rem;\\n    font-weight: normal;\\n    margin: 0;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -317,6 +317,17 @@ eval("\n\n//# sourceURL=webpack:///./scripts/main.js?");
 
 /***/ }),
 
+/***/ "./scripts/searchable.js":
+/*!*******************************!*\
+  !*** ./scripts/searchable.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("class Post {\n  constructor(fighter, pilot, faction) {\n    this.fighter = fighter;\n    this.pilot = pilot;\n    this.faction = faction;\n  }\n}\n\nvar searchFilter = new Vue({\n  el: '#search-filter',\n  data: {\n    search: \"\",\n    postList: [new Post(\"Red-1\", \"Cmdr. Garven Dreis\", \"Rebels\"), new Post(\"Red-2\", \"Lt. Wedge Antilles\", \"Rebels\"), new Post(\"Red-3\", \"Biggs Darklighter\", \"Rebels\"), new Post(\"Red-4\", \"John D. Branon\", \"Rebels\"), new Post(\"Red-5\", \"Luke Skywalker\", \"Rebels\"), new Post(\"TA-1\", \"Darth Vader\", \"Imperial\")]\n  },\n  computed: {\n    filteredList() {\n      return this.postList.filter(post => {\n        return post.pilot.toLowerCase().includes(this.search.toLowerCase());\n      });\n    }\n  }\n});\n\n//# sourceURL=webpack:///./scripts/searchable.js?");
+
+/***/ }),
+
 /***/ "./scripts/template.js":
 /*!*****************************!*\
   !*** ./scripts/template.js ***!
@@ -330,13 +341,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue_
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************!*\
-  !*** multi ./scripts/main.js ./scripts/template.js ./scripts/googlesheetdb.js ./scripts/basic.js ***!
-  \***************************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** multi ./scripts/main.js ./scripts/template.js ./scripts/googlesheetdb.js ./scripts/basic.js ./scripts/searchable.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\main.js */\"./scripts/main.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\template.js */\"./scripts/template.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\googlesheetdb.js */\"./scripts/googlesheetdb.js\");\nmodule.exports = __webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\basic.js */\"./scripts/basic.js\");\n\n\n//# sourceURL=webpack:///multi_./scripts/main.js_./scripts/template.js_./scripts/googlesheetdb.js_./scripts/basic.js?");
+eval("__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\main.js */\"./scripts/main.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\template.js */\"./scripts/template.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\googlesheetdb.js */\"./scripts/googlesheetdb.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\basic.js */\"./scripts/basic.js\");\nmodule.exports = __webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\searchable.js */\"./scripts/searchable.js\");\n\n\n//# sourceURL=webpack:///multi_./scripts/main.js_./scripts/template.js_./scripts/googlesheetdb.js_./scripts/basic.js_./scripts/searchable.js?");
 
 /***/ })
 

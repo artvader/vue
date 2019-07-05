@@ -25,6 +25,15 @@
   </div>
   <h2>Templates using vue-loader</h2>
   <div id="mainContent"></div>
+  <h2>Search Filter</h2>
+  <div id="search-filter">
+    <input type="text" v-model="search" placeholder="Search pilot.."/>
+    <ul>
+      <li v-for="post in filteredList">
+        <strong>{{ post.pilot }}</strong> - <span class="text-sm">{{ post.fighter }}</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
   <script src="libs/vue.js"></script>

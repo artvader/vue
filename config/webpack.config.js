@@ -17,6 +17,7 @@ module.exports = {
             resolve('scripts/template.js'),
             resolve('scripts/googlesheetdb.js'),
             resolve('scripts/basic.js'),
+            resolve('scripts/searchable.js'),
         ]
     },
     output: {

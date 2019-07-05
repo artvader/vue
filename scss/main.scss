@@ -27,3 +27,13 @@ h1 {
     border-radius:(4/$base-font-size)*1rem;
     max-width:(990/$base-font-size)*1rem;
 }
+
+.text-sm {
+    font-size: #{(12/$base-font-size)*1rem};
+}
+
+#search-filter {
+    li {
+        padding:#{(10/$base-font-size)*1rem} #{(16/$base-font-size)*1rem};
+    }
+}
