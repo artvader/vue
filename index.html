@@ -1,42 +1,47 @@
 <html>
+
 <head>
   <title>Vue.JS</title>
   <link rel="stylesheet" href="public/css/main.css">
 </head>
+
 <body>
   <h1>My Vue JS/Webpack Demo</h1>
-<div class="content">
+  <div class="content">
     <h2>Basic</h2>
-  <div id="app">
-    <ol v-cloak>
-      <li v-for="todo in todos">
-        {{ todo.text }}
-      </li>
-    </ol>
+    <div id="app">
+      <ol v-cloak>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+    <h2>Google Sheet as Data Source</h2>
+    <div id="googleSheetDB">
+      <ul v-cloak>
+        <li v-for="googleSheetItem in googleSheetItems">
+          <strong>{{googleSheetItem.gsx$title.$t}}</strong> - <em>{{googleSheetItem.gsx$content.$t}}</em>
+          <div class="supplementary-info">
+            <div v-html="googleSheetItem.gsx$article.$t"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <h2>Templates using vue-loader</h2>
+    <div id="mainContent"></div>
+    <h2>Search Filter</h2>
+    <div id="search-filter">
+      <input class="form-control" type="text" v-model="search" placeholder="Search pilot.." />
+      <ul>
+        <li v-for="post in filteredList">
+          <strong>{{ post.pilot }}</strong> - <span class="text-sm">{{ post.fighter }}</span>
+        </li>
+      </ul>
+    </div>
   </div>
-  <h2>Google Sheet as Data Source</h2>
-  <div id="googleSheetDB">
-    <ul v-cloak>
-      <li v-for="googleSheetItem in googleSheetItems">
-        <strong>{{googleSheetItem.gsx$title.$t}}</strong> - <em>{{googleSheetItem.gsx$content.$t}}</em> 
-        <div class="supplementary-info"><div v-html="googleSheetItem.gsx$article.$t"></div></div>
-      </li>
-    </ul>
-  </div>
-  <h2>Templates using vue-loader</h2>
-  <div id="mainContent"></div>
-  <h2>Search Filter</h2>
-  <div id="search-filter">
-    <input type="text" v-model="search" placeholder="Search pilot.."/>
-    <ul>
-      <li v-for="post in filteredList">
-        <strong>{{ post.pilot }}</strong> - <span class="text-sm">{{ post.fighter }}</span>
-      </li>
-    </ul>
-  </div>
-</div>
 
   <script src="libs/vue.js"></script>
   <script src="public/bundle/main.js"></script>
 </body>
+
 </html>

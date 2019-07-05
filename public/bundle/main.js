@@ -291,7 +291,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var app = new Vue({\n  el: '#app',\n  data: {\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }, { text: 'Create a Demo Page' }, { text: 'Debug Demo Page' }, { text: 'Push to GIT' }]\n  }\n});\n\n//# sourceURL=webpack:///./scripts/basic.js?");
+eval("var app = new Vue({\n  el: '#app',\n  data: {\n    todos: [{\n      text: 'Learn JavaScript'\n    }, {\n      text: 'Learn Vue'\n    }, {\n      text: 'Build something awesome'\n    }, {\n      text: 'Create a Demo Page'\n    }, {\n      text: 'Debug Demo Page'\n    }, {\n      text: 'Push to GIT'\n    }]\n  }\n});\n\n//# sourceURL=webpack:///./scripts/basic.js?");
 
 /***/ }),
 
@@ -324,7 +324,7 @@ eval("\n\n//# sourceURL=webpack:///./scripts/main.js?");
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("class Post {\n  constructor(fighter, pilot, faction) {\n    this.fighter = fighter;\n    this.pilot = pilot;\n    this.faction = faction;\n  }\n}\n\nvar searchFilter = new Vue({\n  el: '#search-filter',\n  data: {\n    search: \"\",\n    postList: [new Post(\"Red-1\", \"Cmdr. Garven Dreis\", \"Rebels\"), new Post(\"Red-2\", \"Lt. Wedge Antilles\", \"Rebels\"), new Post(\"Red-3\", \"Biggs Darklighter\", \"Rebels\"), new Post(\"Red-4\", \"John D. Branon\", \"Rebels\"), new Post(\"Red-5\", \"Luke Skywalker\", \"Rebels\"), new Post(\"TA-1\", \"Darth Vader\", \"Imperial\")]\n  },\n  computed: {\n    filteredList() {\n      return this.postList.filter(post => {\n        return post.pilot.toLowerCase().includes(this.search.toLowerCase());\n      });\n    }\n  }\n});\n\n//# sourceURL=webpack:///./scripts/searchable.js?");
+eval("class Post {\n    constructor(fighter, pilot, faction) {\n        this.fighter = fighter;\n        this.pilot = pilot;\n        this.faction = faction;\n    }\n}\n\nvar searchFilter = new Vue({\n    el: '#search-filter',\n    data: {\n        search: \"\",\n        postList: [new Post(\"Red-1\", \"Cmdr. Garven Dreis\", \"Rebels\"), new Post(\"Red-2\", \"Lt. Wedge Antilles\", \"Rebels\"), new Post(\"Red-3\", \"Biggs Darklighter\", \"Rebels\"), new Post(\"Red-4\", \"John D. Branon\", \"Rebels\"), new Post(\"Red-5\", \"Luke Skywalker\", \"Rebels\"), new Post(\"TA-1\", \"Darth Vader\", \"Imperial\")]\n    },\n    computed: {\n        filteredList() {\n            return this.postList.filter(post => {\n                return post.pilot.toLowerCase().includes(this.search.toLowerCase());\n            });\n        }\n    }\n});\n\n//# sourceURL=webpack:///./scripts/searchable.js?");
 
 /***/ }),
 

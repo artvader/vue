@@ -2,19 +2,25 @@
 
 //Vue cloak styles
 
-[v-cloak] > * { display:none }
-[v-cloak]::before { content: "loading…" }
+[v-cloak]>* {
+    display: none
+}
+
+[v-cloak]::before {
+    content: "loading…"
+}
 
 //Main Styles
 body {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
+
 h1 {
-    background-color:lighten(black, 30%);
+    background-color: lighten(black, 30%);
     padding:#{(16/$base-font-size)*1rem};
-    color:darken(white,10%);
+    color: darken(white, 10%);
 }
 
 .content {
@@ -22,10 +28,10 @@ h1 {
 }
 
 .supplementary-info {
-    padding:(8/$base-font-size)*1rem;
-    background:lighten(black,90%);
-    border-radius:(4/$base-font-size)*1rem;
-    max-width:(990/$base-font-size)*1rem;
+    padding: (8/$base-font-size)*1rem;
+    background: lighten(black, 90%);
+    border-radius: (4/$base-font-size)*1rem;
+    max-width: (990/$base-font-size)*1rem;
 }
 
 .text-sm {
@@ -36,4 +42,15 @@ h1 {
     li {
         padding:#{(10/$base-font-size)*1rem} #{(16/$base-font-size)*1rem};
     }
+}
+
+.form-control {
+    width: (1040/$base-font-size)*1rem;
+    padding:#{(16/$base-font-size)*1rem};
+    font-size: #{(16/$base-font-size)*1rem};
+    font-weight: bold;
+    border-radius: #{(4/$base-font-size)*1rem};
+    box-shadow: none;
+    background-color: lighten(black, 95%);
+    border:#{(1/$base-font-size)*1rem} solid lighten(black, 90%);
 }
