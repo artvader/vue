@@ -6,8 +6,8 @@
   "scripts": {
     "test": "test",
     "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
-    "watch-css": "nodemon -e scss,vue,js,html --ignore public/bundle/ -x \"npm run webpack && reload --port 6969 --dir d:/xampp/htdocs/vue --browser \" ",
-    "webpack": "webpack --color --progress --config config/webpack.config.js"
+    "watch": "nodemon -e scss,vue,js,html --ignore public/bundle/ -x \"npm run webpack && npm run build-css && reload --port 8080 --dir d:/xampp/htdocs/vue \" ",
+    "webpack": "webpack --color --progress --config config/webpack.config.js && echo go to LOCALHOST:8080"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/artvader/vue#readme",
   "dependencies": {
-    "node-sass": "^4.12.0",
     "vue": "^2.5.16"
   },
   "devDependencies": {
@@ -32,6 +31,9 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^3.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
     "vue-loader": "^15.7.0",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.10",

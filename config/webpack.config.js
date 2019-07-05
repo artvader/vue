@@ -12,9 +12,12 @@ module.exports = {
         // Since we need to load vue in the entry page.
         vue: 'vue',
         // This is where the `main-content` component is
-        template: resolve('scripts/template.js'),
-        googlesheetDB: resolve('scripts/googlesheetdb.js'),
-        basic: resolve('scripts/basic.js'),
+        main: [
+            resolve('scripts/main.js'),
+            resolve('scripts/template.js'),
+            resolve('scripts/googlesheetdb.js'),
+            resolve('scripts/basic.js'),
+        ]
     },
     output: {
         filename: '[name].js',
@@ -40,8 +43,8 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [
-                    'vue-style-loader',
-                    'css-loader',
+                    'vue-style-loader', // creates style nodes from JS strings
+                    'css-loader', // translates CSS into CommonJS
 
                 ]
             },
@@ -49,9 +52,9 @@ module.exports = {
                 test: /\.scss$/,
                 use: [
                     //chaining the loaders is the key!
-                    'vue-style-loader',
-                    'css-loader',
-                    'sass-loader'
+                    'vue-style-loader', // creates style nodes from JS strings
+                    'css-loader', // translates CSS into CommonJS
+                    'sass-loader' // compiles Sass to CSS, using Node Sass by default
                 ]
             }
         ]

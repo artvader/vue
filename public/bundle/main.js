@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./scripts/template.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    name: \"main-content\",\n    data: () => ({\n        // reactive data property of the component.\n        webpack: 'Yesterday, all my troubles seem so far away...'\n    })\n});\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    name: \"main-content\",\n    data: () => ({\n        // reactive data property of the component.\n        webpack: 'This is the template content'\n    })\n});\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -105,7 +105,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n//\n//\n//\n\
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"/*\\n * Some styles so that our first component\\n * looks somewhat special\\n*/\\n.main-content[data-v-79af8d89] {\\n  font-family: sans-serif;\\n  background-color: #ff9999;\\n  padding: 10px;\\n  border-radius: 5px;\\n  max-width: 500px;\\n}\\n.main-content h1[data-v-79af8d89] {\\n    font-size: 16px;\\n    margin: 0;\\n}\\n.main-content h3[data-v-79af8d89] {\\n    font-size: 16px;\\n    font-weight: normal;\\n    margin: 0;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"/*\\n * Some styles so that our first component\\n * looks somewhat special\\n*/\\n.main-content[data-v-79af8d89] {\\n  font-family: sans-serif;\\n  background-color: #ff9999;\\n  padding: 0.625rem;\\n  border-radius: 0.3125rem;\\n  max-width: 64rem;\\n}\\n.main-content h2[data-v-79af8d89] {\\n    font-size: 1rem;\\n    margin: 0;\\n}\\n.main-content h3[data-v-79af8d89] {\\n    font-size: 1rem;\\n    font-weight: normal;\\n    margin: 0;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {var scope = typeof global !=
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"main-content\" }, [\n    _c(\"h1\", [_vm._v(\" This is a template component...\")]),\n    _vm._v(\" \"),\n    _c(\"h3\", [_vm._v(\" \" + _vm._s(_vm.webpack))])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"render\", function() { return render; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"staticRenderFns\", function() { return staticRenderFns; });\nvar render = function() {\n  var _vm = this\n  var _h = _vm.$createElement\n  var _c = _vm._self._c || _h\n  return _c(\"div\", { staticClass: \"main-content\" }, [\n    _c(\"h2\", [_vm._v(\" This is a template component...\")]),\n    _vm._v(\" \"),\n    _c(\"h3\", [_vm._v(\" \" + _vm._s(_vm.webpack))])\n  ])\n}\nvar staticRenderFns = []\nrender._withStripped = true\n\n\n\n//# sourceURL=webpack:///./public/templates/template1.vue?./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -284,6 +284,39 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
+/***/ "./scripts/basic.js":
+/*!**************************!*\
+  !*** ./scripts/basic.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var app = new Vue({\n  el: '#app',\n  data: {\n    todos: [{ text: 'Learn JavaScript' }, { text: 'Learn Vue' }, { text: 'Build something awesome' }, { text: '1' }, { text: '2' }, { text: '3' }]\n  }\n});\n\n//# sourceURL=webpack:///./scripts/basic.js?");
+
+/***/ }),
+
+/***/ "./scripts/googlesheetdb.js":
+/*!**********************************!*\
+  !*** ./scripts/googlesheetdb.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// ID of the Google Spreadsheet\nvar spreadsheetID = \"1qIfiLcAItVaWwO-HRh_nyMR8vi1FZTtCGK9HASWvRvI\";\n\n// Make sure it is public or set to Anyone with link can view \nvar url = \"https://spreadsheets.google.com/feeds/list/\" + spreadsheetID + \"/od6/public/values?alt=json\";\n//Pure Javascript way to read JSON files\n\nvar xmlhttp = new XMLHttpRequest();\n//Use XMLHttpRequest (XHR) objects to interact with servers. \n//You can retrieve data from a URL without having to do a full page refresh.\n\n//You can retrieve data from a URL without having to do a full page refresh.\nxmlhttp.open('GET', url, true);\nxmlhttp.onreadystatechange = function () {\n    if (xmlhttp.readyState == 4) {\n        //Possible Values are:\n        //XMLHttpRequest.readyState == 0; UNSENT\n        //XMLHttpRequest.readyState == 1; OPENED\n        //XMLHttpRequest.readyState == 2; HEADERS_RECEIVED\n        //XMLHttpRequest.readyState == 3; LOADING\n        //XMLHttpRequest.readyState == 4; DONE\n\n        if (xmlhttp.status == 200) {\n            var data = JSON.parse(xmlhttp.responseText);\n            var entry = data.feed.entry;\n            //Vue.js script to process data\n            var googleSheetApp = new Vue({\n                el: '#googleSheetDB',\n                data: {\n                    googleSheetItems: entry\n                }\n            });\n        }\n    }\n};\nxmlhttp.send(null);\n\n//# sourceURL=webpack:///./scripts/googlesheetdb.js?");
+
+/***/ }),
+
+/***/ "./scripts/main.js":
+/*!*************************!*\
+  !*** ./scripts/main.js ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./scripts/main.js?");
+
+/***/ }),
+
 /***/ "./scripts/template.js":
 /*!*****************************!*\
   !*** ./scripts/template.js ***!
@@ -293,6 +326,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n/* harmony import */ var _public_templates_template1_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/templates/template1.vue */ \"./public/templates/template1.vue\");\n\n\n\nlet MainComponent = vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"].extend(_public_templates_template1_vue__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\nnew MainComponent().$mount(\"#mainContent\");\n\n//# sourceURL=webpack:///./scripts/template.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!***************************************************************************************************!*\
+  !*** multi ./scripts/main.js ./scripts/template.js ./scripts/googlesheetdb.js ./scripts/basic.js ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\main.js */\"./scripts/main.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\template.js */\"./scripts/template.js\");\n__webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\googlesheetdb.js */\"./scripts/googlesheetdb.js\");\nmodule.exports = __webpack_require__(/*! D:\\xampp\\htdocs\\vue\\scripts\\basic.js */\"./scripts/basic.js\");\n\n\n//# sourceURL=webpack:///multi_./scripts/main.js_./scripts/template.js_./scripts/googlesheetdb.js_./scripts/basic.js?");
 
 /***/ })
 

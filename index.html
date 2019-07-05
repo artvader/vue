@@ -1,11 +1,12 @@
 <html>
-
 <head>
   <title>Vue.JS</title>
   <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
-  <h2>Basic Vue.JS Demo</h2>
+  <h1>My Vue JS/Webpack Demo</h1>
+<div class="content">
+    <h2>Basic</h2>
   <div id="app">
     <ol v-cloak>
       <li v-for="todo in todos">
@@ -21,11 +22,11 @@
       </li>
     </ul>
   </div>
+  <h2>Templates using vue-loader</h2>
   <div id="mainContent"></div>
+</div>
 
   <script src="libs/vue.js"></script>
-  <script src="public/bundle/basic.js"></script>
-  <script src="public/bundle/template.js"></script>
-  <script src="public/bundle/googlesheetdb.js"></script>
+  <script src="public/bundle/main.js"></script>
 </body>
 </html>
