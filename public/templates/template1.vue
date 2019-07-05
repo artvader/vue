@@ -1,6 +1,6 @@
 <template>
     <div class="main-content">
-        <h1> This is your first component in Vue </h1>
+        <h1> This is a template component...</h1>
         <h3> {{ webpack }}</h3>
     </div>
 </template>
@@ -10,7 +10,7 @@
         name: "main-content",
         data: () => ({
             // reactive data property of the component.
-            webpack: 'Powered by webpack!',
+            webpack: 'Yesterday, all my troubles seem so far away...',
         }),
     }
 </script>
@@ -22,7 +22,7 @@
     */
     .main-content {
         font-family: sans-serif;
-        background-color: #ccf7e2;
+        background-color: red;
         padding: 10px;
         border-radius: 5px;
         max-width: 500px;
